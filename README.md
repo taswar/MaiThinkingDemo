@@ -1,4 +1,4 @@
-# MaiThinkingDemo
+# MAI-Thinking-1 Sample
 
 A minimal .NET 10 console sample that calls Azure OpenAI through the `Microsoft.Extensions.AI` `IChatClient` abstraction, authenticated with `DefaultAzureCredential`. It includes two independent samples:
 
