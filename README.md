@@ -1,5 +1,7 @@
 # MAI-Thinking-1 Sample
 
+Blog Post: [MAI-Thinking-1 Is Now in Foundry — Here’s What It Means If You Write C#](https://taswar.zeytinsoft.com/mai-thinking-1-csharp-developers-guide/)
+
 A minimal .NET 10 console sample that calls Azure OpenAI through the `Microsoft.Extensions.AI` `IChatClient` abstraction, authenticated with `DefaultAzureCredential`. It includes two independent samples:
 
 - **[Program.cs](Program.cs)** — the main project. Sends a contract excerpt to the model for step-by-step risk analysis using `IChatClient`.
