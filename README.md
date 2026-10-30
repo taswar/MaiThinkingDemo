@@ -7,10 +7,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
 
-- 📖 Full walkthrough: [MAI-Thinking-1 Is Now in Foundry — Here’s What It Means If You Write C#](https://taswar.zeytinsoft.com/mai-thinking-1-csharp-developers-guide/)
+- 📖 Full walkthrough: [MAI-Thinking-1 Is Now in Foundry — Here’s What It Means If You Write C#](https://taswar.zeytinsoft.com/mai-thinking-1-csharp-developers-guide/?utm_source=github&utm_medium=readme&utm_campaign=MaiThinkingDemo&utm_content=walkthrough)
 - ⭐ If this sample helps you, star the repo so other .NET developers can find it.
 - 🔁 Related: [MAI-Image-2.5-Pro C# Sample](https://github.com/taswar/MAI-Image-2.5-Pro-Sample) and [MAI-Voice-2 Flash C# Samples](https://github.com/taswar/Mai-Voice-2-Flash-Sample)
-- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/?utm_source=github&utm_medium=readme&utm_campaign=MaiThinkingDemo&utm_content=ai-models-hub)
 - For my free ebook on prompt engineering, see [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
 
 A minimal .NET 10 console sample for **MAI-Thinking-1**, Microsoft's reasoning model on Microsoft Foundry. It calls the model's Azure OpenAI endpoint through the `Microsoft.Extensions.AI` `IChatClient` abstraction, authenticated with `DefaultAzureCredential`. It includes two independent samples:
