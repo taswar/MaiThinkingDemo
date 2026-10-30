@@ -1,16 +1,37 @@
-# MAI-Thinking-1 Sample
+# MAI-Thinking-1 C# Sample
 
-Blog Post: [MAI-Thinking-1 Is Now in Foundry — Here’s What It Means If You Write C#](https://taswar.zeytinsoft.com/mai-thinking-1-csharp-developers-guide/)
+![MAI-Thinking-1 for C# Developers](https://taswar.zeytinsoft.com/wp-content/uploads/2026/08/MAI-Thinking-1-for-C-Developers.png)
 
-A minimal .NET 10 console sample that calls Azure OpenAI through the `Microsoft.Extensions.AI` `IChatClient` abstraction, authenticated with `DefaultAzureCredential`. It includes two independent samples:
+[![Build](https://github.com/taswar/MaiThinkingDemo/actions/workflows/dotnet.yml/badge.svg)](https://github.com/taswar/MaiThinkingDemo/actions/workflows/dotnet.yml)
+![.NET 10](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](CONTRIBUTING.md)
+
+- 📖 Full walkthrough: [MAI-Thinking-1 Is Now in Foundry — Here’s What It Means If You Write C#](https://taswar.zeytinsoft.com/mai-thinking-1-csharp-developers-guide/)
+- ⭐ If this sample helps you, star the repo so other .NET developers can find it.
+- 🔁 Related: [MAI-Image-2.5-Pro C# Sample](https://github.com/taswar/MAI-Image-2.5-Pro-Sample) and [MAI-Voice-2 Flash C# Samples](https://github.com/taswar/Mai-Voice-2-Flash-Sample)
+- For more C# samples using other AI models, see [AI models for C# developers](https://taswar.zeytinsoft.com/foundry-ai-models-csharp/)
+- For my free ebook on prompt engineering, see [Prompt Engineering for .NET Developers](https://github.com/taswar/PromptEngineeringForDotNetDevelopers)
+
+A minimal .NET 10 console sample for **MAI-Thinking-1**, Microsoft's reasoning model on Microsoft Foundry. It calls the model's Azure OpenAI endpoint through the `Microsoft.Extensions.AI` `IChatClient` abstraction, authenticated with `DefaultAzureCredential`. It includes two independent samples:
 
 - **[Program.cs](Program.cs)** — the main project. Sends a contract excerpt to the model for step-by-step risk analysis using `IChatClient`.
 - **[FunctionSample.cs](FunctionSample.cs)** — a standalone, file-based app (no project needed) that also uses `IChatClient` and demonstrates automatic tool/function calling (`GetTicketStatus`) via `UseFunctionInvocation()`.
 
+## Quick start
+
+```powershell
+git clone https://github.com/taswar/MaiThinkingDemo.git
+cd MaiThinkingDemo
+dotnet user-secrets set "AZURE_AI_ENDPOINT" "https://<your-resource>.openai.azure.com/"
+az login
+dotnet run
+```
+
 ## Prerequisites
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
-- An Azure OpenAI resource with a chat-completion model deployed
+- An Azure OpenAI or Microsoft Foundry resource with a MAI-Thinking-1 deployment
 - Azure credentials available to `DefaultAzureCredential` (e.g. run `az login`, or use a Managed Identity / environment variables — see [DefaultAzureCredential docs](https://learn.microsoft.com/dotnet/api/azure.identity.defaultazurecredential))
 
 ## Configuration
@@ -93,7 +114,14 @@ dotnet restore
 ## Project structure
 
 ```
-Program.cs          # Main project entry point (contract risk analysis)
-FunctionSample.cs    # Standalone file-based app (IChatClient + tool calling)
+Program.cs                    # Main project entry point (contract risk analysis)
+FunctionSample.cs             # Standalone file-based app (IChatClient + tool calling)
 MaiThinkingDemo.csproj
+CONTRIBUTING.md               # How to contribute
+.github/workflows/dotnet.yml  # Build workflow
+LICENSE                       # MIT license
 ```
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
